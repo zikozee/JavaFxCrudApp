@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="355.0" style="-fx-background-color: #FFF2AB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <Label fx:id="isConnected" layoutX="14.0" layoutY="26.0" text="Status" textFill="#b23f3e">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="138.0" layoutY="66.0" prefHeight="34.0" prefWidth="155.0" promptText="USERNAME">
+         <font>
+            <Font name="Monotype Corsiva" size="17.0" />
+         </font>
+         <effect>
+            <Blend mode="MULTIPLY" />
+         </effect>
+      </TextField>
+      <Button layoutX="136.0" layoutY="169.0" mnemonicParsing="false" onAction="#Login" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#084d19">
+               <input>
+                  <Blend />
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text layoutX="34.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME: ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD: ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="138.0" layoutY="115.0" prefHeight="36.0" prefWidth="155.0" promptText="PASSWORD">
+         <font>
+            <Font name="Monotype Corsiva" size="17.0" />
+         </font>
+         <effect>
+            <Blend mode="MULTIPLY" />
+         </effect>
+      </PasswordField>
+      <Label layoutX="80.0" layoutY="239.0" onMousePressed="#onMousePressed" text="Forgot Username or Password" textFill="#0d10bf" underline="true">
+         <font>
+            <Font name="Monotype Corsiva" size="17.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow offsetX="5.0" offsetY="5.0" />
+   </effect>
+</AnchorPane>

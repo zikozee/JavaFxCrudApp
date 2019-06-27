@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="10" prefHeight="345.0" prefWidth="580.0" style="-fx-background-color: #D1E57D;"
+          vgap="10" xmlns="http://javafx.com/javafx/8.0.171"
+          fx:controller="sample.CustomerController">
+    <Label text="Client Name:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="clientNameID" prefHeight="25.0" prefWidth="350.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets top="15.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Label text="Pickup Address:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="pickupID" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+
+    <Label text="Client Phone:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="clientPhoneID" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+
+    <Label text="Date" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <DatePicker fx:id="dateID" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="Contact Person:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="contactPersonID" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+
+    <Label text="Delivery Address:" GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="deliveryID" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+    <Label text="Contact Phone:" GridPane.rowIndex="6">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="contactPhoneID" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+    <Label text="Staff:" GridPane.rowIndex="7">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="staffID" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+    <Label text="Charge:" GridPane.rowIndex="8">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <TextField fx:id="chargeID" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <font>
+            <Font name="Tahoma Bold" size="16.0"/>
+        </font>
+    </TextField>
+    <Label text="Payment Status:" GridPane.rowIndex="9">
+        <font>
+            <Font name="Monotype Corsiva" size="18.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets left="15.0"/>
+        </GridPane.margin>
+    </Label>
+    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+        <RadioButton fx:id="paidRB" mnemonicParsing="false" selected="true" text="Paid">
+            <HBox.margin>
+                <Insets left="15.0"/>
+            </HBox.margin>
+            <toggleGroup>
+                <ToggleGroup fx:id="myGroup"/>
+            </toggleGroup>
+            <font>
+                <Font name="Monotype Corsiva" size="18.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" text="Unpaid" toggleGroup="$myGroup">
+            <HBox.margin>
+                <Insets left="40.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Monotype Corsiva" size="18.0"/>
+            </font>
+        </RadioButton>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+
+</GridPane>
